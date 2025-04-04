@@ -1,3 +1,4 @@
+Barryvdh\Debugbar\ServiceProvider::class,
 <?php
 
 return [
@@ -14,7 +15,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
-
+    'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -27,7 +28,7 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
-
+    'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -40,7 +41,7 @@ return [
     */
 
     'debug' => (bool) env('APP_DEBUG', false),
-
+    'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
     /*
     |--------------------------------------------------------------------------
     | Application URL
@@ -53,7 +54,7 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
-
+    'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -66,7 +67,7 @@ return [
     */
 
     'timezone' => 'UTC',
-
+    'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
@@ -83,7 +84,7 @@ return [
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
-
+    'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
     /*
     |--------------------------------------------------------------------------
     | Encryption Key
@@ -104,7 +105,7 @@ return [
             explode(',', env('APP_PREVIOUS_KEYS', ''))
         ),
     ],
-
+    'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
     /*
     |--------------------------------------------------------------------------
     | Maintenance Mode Driver
@@ -122,5 +123,5 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
-
+    'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
 ];
